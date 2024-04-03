@@ -1,0 +1,44 @@
+Script started on 2024-04-03 13:06:32+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="197" LINES="25"]
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ doc[K[K[K[7mdocker run --rm --name logservice -d devopsdockeruh/simple-web-service:ubuntu[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cdocker run --rm --name logservice -d devopsdockeruh/simple-web-service:ubuntu
+[?2004l8d7b7a2f041266c82fda354a6c90bff66492649b8b9645abe39eec917f793ebb
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker exec -it logservice bash
+[?2004l]0;root@8d7b7a2f0412: /usr/src/approot@8d7b7a2f0412:/usr/src/app# tail -f ./text.log
+2024-04-03 08:07:17 +0000 UTC
+2024-04-03 08:07:19 +0000 UTC
+2024-04-03 08:07:21 +0000 UTC
+2024-04-03 08:07:23 +0000 UTC
+2024-04-03 08:07:25 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-03 08:07:27 +0000 UTC
+2024-04-03 08:07:29 +0000 UTC
+2024-04-03 08:07:31 +0000 UTC
+2024-04-03 08:07:33 +0000 UTC
+2024-04-03 08:07:35 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-03 08:07:37 +0000 UTC
+2024-04-03 08:07:39 +0000 UTC
+2024-04-03 08:07:41 +0000 UTC
+2024-04-03 08:07:43 +0000 UTC
+2024-04-03 08:07:45 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-03 08:07:47 +0000 UTC
+2024-04-03 08:07:49 +0000 UTC
+2024-04-03 08:07:51 +0000 UTC
+2024-04-03 08:07:53 +0000 UTC
+2024-04-03 08:07:55 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-03 08:07:57 +0000 UTC
+2024-04-03 08:07:59 +0000 UTC
+2024-04-03 08:08:01 +0000 UTC
+2024-04-03 08:08:03 +0000 UTC
+2024-04-03 08:08:05 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-03 08:08:07 +0000 UTC
+2024-04-03 08:08:09 +0000 UTC
+^C
+]0;root@8d7b7a2f0412: /usr/src/approot@8d7b7a2f0412:/usr/src/app# exit
+exit
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-03 13:08:20+05:00 [COMMAND_EXIT_CODE="130"]
