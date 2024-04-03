@@ -1,0 +1,66 @@
+Script started on 2024-04-03 12:20:34+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="197" LINES="29"]
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker s[Kps -a
+[?2004lCONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS                      PORTS      NAMES
+600c9f5d76e6   redis      "docker-entrypoint.s…"   About a minute ago   Up About a minute           6379/tcp   docker-container-redis
+c501e70ab16f   mysql      "docker-entrypoint.s…"   2 minutes ago        Exited (0) 50 seconds ago              docker-container-mysql
+e05bc46b6591   postgres   "docker-entrypoint.s…"   3 minutes ago        Exited (0) 50 seconds ago              docker-container-postgres
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker stop 600
+[?2004l600
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker rm 600 c50 e05
+[?2004l600
+c50
+e05
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker image ls
+[?2004lREPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+mysql        latest    82563e0cbf18   8 days ago     632MB
+postgres     latest    b9390dd1ea18   6 weeks ago    431MB
+redis        latest    170a1e90f843   2 months ago   138MB
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker rmi mysql[K[K[K[K[K82 b9 17
+[?2004lUntagged: mysql:latest
+Untagged: mysql@sha256:4552fcc5d3cdb8cdee76ee25cce28bf60b0eb3ce93d25ba3bfff7a66bfdcdee8
+Deleted: sha256:82563e0cbf18162af685bff03debc195b851c327c31163fd211c0144d3c1baae
+Deleted: sha256:1ec6a25d9d0e9f5b6b9de54bd25a7abadf87e462e4a8f7bcdd2e51465514d1a0
+Deleted: sha256:94db37d32ebfad636d2c0c57e92f333416c8df0328eca57c9acaf4ee17f79146
+Deleted: sha256:841f234a9a856b8a729e98ff390dd0e41ca8f08b63dd361597dd1b809047e63f
+Deleted: sha256:4780dae798526f95105c00ebe09cc47591b30eff4de56c86c700430ebd0348b5
+Deleted: sha256:64b93fdb873fcf262cc40fa492e6598b7df0b64ee02771df1aa120685b970d09
+Deleted: sha256:696891c1289e24722d08ab7db3f61edb32874dcc6c764d748df077370f7bbae5
+Deleted: sha256:26f817f40dbe49d6507930ebccae13645bbfb39ca63bf1ceaf769f7605df9b32
+Deleted: sha256:7f9290a30ea78acd85c216f714bb5df589531db0b559bb3cd8f17332390a55b2
+Deleted: sha256:b1594fddff8b8af91a2289850c56169c201baa26df4e7a98ecfeb6f669619279
+Deleted: sha256:18a3ada103a9229bc00b549b66ae7caa0bc0eb47e785859d8b1346a254a871d1
+Untagged: postgres:latest
+Untagged: postgres@sha256:6b841c8f6a819884207402f1209a8116844365df15fca8cf556fc54a24c70800
+Deleted: sha256:b9390dd1ea18e34fa4bf7b43c99faac1455f712a9095ffc2c4071994bb7df148
+Deleted: sha256:98664eed2160c395b9ac1a55cce99db40ee5fa91d6a29984fe692441e481fe4a
+Deleted: sha256:c51d22beb7feae568f7eefbffbeeaea04d9bfd63808e4ca831ae7ce2eef9cab8
+Deleted: sha256:a0af4ce1765e7e1234858ceb4d4f7b9a0280dda06553f5bf80cae458662ecaba
+Deleted: sha256:9009bd6ac9d702c2b5796be12244fb9295ca85570b6ed0d1820d6c032afa3f4b
+Deleted: sha256:edbc604dce89e265a02e6e48fabf3a226c2c94cdf29f9c96c069902cbb0ea657
+Deleted: sha256:eee05dafa6572c481e841a14651bb90343cd135519a59ae35b6ece8a31db9bdf
+Deleted: sha256:dda7a0eb4fbc2818304e86c4c8a653ab6984b96144caeba112095434e06c4222
+Deleted: sha256:980424f81870a38351ebc1c327d58a90c4636915e69e324c7bcdd2556d1294a1
+Deleted: sha256:62255eb02a6dd579b4a367a331c38ea0e0df7e3c0a3e82eff76674c27e439bf8
+Deleted: sha256:561500d005349140bb0ad34f0325bf2e6a3b2bb401a01b2cab5166f92a7b2414
+Deleted: sha256:90821e4c45fcc0bbb3f07b3ed8b2ee0ed2ddc3dadc42922358808112e283f5b5
+Deleted: sha256:8bc7e2764cc0e55bf3f31772e48759a436cf89afc1e4fa6e043522ffa62236a5
+Deleted: sha256:0902508329a8b903bce3ed6fca1caf613d75dc6006d9c3e614aa5051d1392d12
+Untagged: redis:latest
+Untagged: redis@sha256:3134997edb04277814aa51a4175a588d45eb4299272f8eff2307bbf8b39e4d43
+Deleted: sha256:170a1e90f8436daa6778aeea3926e716928826c215ca23a8dfd8055f663f9428
+Deleted: sha256:07a225c671a5a8f3c0d3f48590dbb3c9567d00a020c49fff9e60d8dbd7fdc925
+Deleted: sha256:ea580ef52fceb9e8458910388ea2b0cb7793a252bd5ece4a6fbdaee97b052ccd
+Deleted: sha256:36022d92671a31dbf2801a15735a4cddfe220f755e6dfc1f094faacf8d4d68ec
+Deleted: sha256:5ab673946d6214ee4cca972472c8504cb7e2f606cde16d7bdc81b995f33532cc
+Deleted: sha256:b4b7f9d393a71ddd2d4ee4d08c9b0abb549415812645b5907d559b1530d8e1b8
+Deleted: sha256:a73fbd0cf0721f58760274cdf40771a5380fdacd993e5448b5dfab978e06e745
+Deleted: sha256:da36ef59ebafc4af9e78fce5d6ff603f937befdb2270d3733dd25aa39cb8c563
+Deleted: sha256:a483da8ab3e941547542718cacd3258c6c705a63e94183c837c9bc44eb608999
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE     COMMAND   CREATED   STATUS    PORTS     NAMES
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker image ls
+[?2004lREPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-03 12:22:00+05:00 [COMMAND_EXIT_CODE="0"]
