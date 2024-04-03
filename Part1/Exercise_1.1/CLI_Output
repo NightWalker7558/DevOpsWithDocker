@@ -1,0 +1,10 @@
+Script started on 2024-04-03 10:27:42+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="197" LINES="29"]
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker ps -a
+[?2004lCONTAINER ID   IMAGE      COMMAND                  CREATED              STATUS                      PORTS      NAMES
+ac824b13e17e   postgres   "docker-entrypoint.s…"   About a minute ago   Exited (0) 20 seconds ago              docker-container-postgres
+ed0a0dd07cda   redis      "docker-entrypoint.s…"   10 minutes ago       Up 10 minutes               6379/tcp   docker-container-redis
+699a18173e58   mysql      "docker-entrypoint.s…"   14 minutes ago       Exited (0) 19 seconds ago              docker-container-mysql
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-03 10:28:09+05:00 [COMMAND_EXIT_CODE="0"]
