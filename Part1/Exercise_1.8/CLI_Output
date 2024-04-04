@@ -1,0 +1,11 @@
+Script started on 2024-04-04 14:56:12+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="187" LINES="25"]
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /*path                    --> server.Start.func1 (3 handlers)
+[GIN-debug] Listening and serving HTTP on :8080
+^[[3~^C
+Script done on 2024-04-04 14:56:32+05:00 [COMMAND_EXIT_CODE="2"]
