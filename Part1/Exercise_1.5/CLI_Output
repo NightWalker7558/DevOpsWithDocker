@@ -1,0 +1,36 @@
+Script started on 2024-04-04 10:06:09+05:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="197" LINES="25"]
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker images
+[?2004lREPOSITORY                          TAG       IMAGE ID       CREATED       SIZE
+ubuntu                              latest    ca2b0f26964c   5 weeks ago   77.9MB
+devopsdockeruh/simple-web-service   ubuntu    4e3362e907d5   3 years ago   83MB
+devopsdockeruh/simple-web-service   alpine    fd312adc88e0   3 years ago   15.7MB
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker[K[K[K[K[K[Kdocker images[4Pscript p2[5Pexitdocker exec -it ubuntu-container bashexit[Kdocker run -it --name ubuntu-container ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'[A]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ exit[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[Kdocker run --rm --name service-alpine -d deve[Kopsdockeruh/simple-web-service:alpine
+[?2004l87f34591613048b07cf2cae850fb28e89978442aef12ef0cd93a374ecdc25cf9
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ docker exec -it service-alpine sh
+[?2004l/usr/src/app # [6ntail -f ./text.log
+2024-04-04 05:07:52 +0000 UTC
+2024-04-04 05:07:54 +0000 UTC
+2024-04-04 05:07:56 +0000 UTC
+2024-04-04 05:07:58 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-04 05:08:00 +0000 UTC
+2024-04-04 05:08:02 +0000 UTC
+2024-04-04 05:08:04 +0000 UTC
+2024-04-04 05:08:06 +0000 UTC
+2024-04-04 05:08:08 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-04 05:08:10 +0000 UTC
+2024-04-04 05:08:12 +0000 UTC
+2024-04-04 05:08:14 +0000 UTC
+2024-04-04 05:08:16 +0000 UTC
+2024-04-04 05:08:18 +0000 UTC
+Secret message is: 'You can find the source code here: https://github.com/docker-hy'
+2024-04-04 05:08:20 +0000 UTC
+2024-04-04 05:08:22 +0000 UTC
+^C
+/usr/src/app # [6nexit
+[?2004h]0;ash@Genesis: ~/Desktop/Projects/DevOpsWithDocker[01;32mash@Genesis[00m:[01;34m~/Desktop/Projects/DevOpsWithDocker[00m$ exit
+[?2004lexit
+
+Script done on 2024-04-04 10:08:29+05:00 [COMMAND_EXIT_CODE="130"]
