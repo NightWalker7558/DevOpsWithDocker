@@ -1,0 +1,2 @@
+ - `P1`: Refers to Process 1 where the Docker Container for Ubuntu is initalized in interactive mode. The first try to fetch the website results in an error as `curl` is not installed. Whereas, the second try succeeds as it is initiated after installing `curl`.
+ - `P2`: Refers to Process 2 where Advanced Packaging Tool (`APT`) is updated, upgraded, and then used to install `curl`.  
