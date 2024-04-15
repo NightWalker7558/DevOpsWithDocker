@@ -1,0 +1,4 @@
+docker run -d --name app -p 8080:8080 devopsdockeruh/simple-web-service server
+curl http://localhost:8080
+docker stop app
+docker rm app
