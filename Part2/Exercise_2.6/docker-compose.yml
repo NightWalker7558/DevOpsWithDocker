@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  frontend:
+    # The frontend image is already available from previous builds 
+    image: frontend
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8080
+    ports:
+      - 5000:5000
+    container_name: frontend
+
+  backend:
+    # The backend image is already available from previous builds
+    image: backend
+    environment:
+      - REQUEST_ORIGIN=http://localhost:5000
+      - REDIS_HOST=redis
+      - POSTGRES_HOST=db
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DATABASE=postgres
+    ports:
+      - 8080:8080
+    container_name: backend
+
+  redis:
+    image: redis:alpine
+    restart: unless-stopped
+    container_name: redis
+
+  db:
+    image: postgres:alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: postgres  
+    container_name: db

@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  frontend:
+    # The frontend image is already available from previous builds 
+    image: frontend
+    environment:
+      - REACT_APP_BACKEND_URL=http://localhost:8080
+    ports:
+      - 5000:5000
+  backend:
+    # The backend image is already available from previous builds
+    image: backend
+    environment:
+      - REQUEST_ORIGIN=http://localhost:5000
+    ports:
+      - 8080:8080
