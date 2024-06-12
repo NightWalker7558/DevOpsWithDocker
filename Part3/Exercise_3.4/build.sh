@@ -14,10 +14,16 @@ repo_name=$(basename "$github_repo")
 cd "$repo_name"
 
 docker build . -t "$dockerhub_repo"
+
+docker login --username $DOCKER_USER --password $DOCKER_PWD
+
 docker push "$dockerhub_repo"
+
 docker rmi "$dockerhub_repo"
 
 cd ..
 rm -rf "$repo_name"
 
 echo "Successfully built and pushed image to $dockerhub_repo"
+
+exit 0
